@@ -38,13 +38,44 @@
         <button onclick="window.location.href='Iniciar-sesion.html'">Iniciar Sesión</button>
     </nav>
 
-    <main>
-
+    <main class="video-container">
+            <video 
+            src="/img/video/Video-Inicio.webm"
+            muted
+            autoplay
+            loop
+            ></video>
     </main>
 
     <footer>
-
+        <div class="copyright">
+            <p>© <span id="year"></span> Aitana Music</p>
+        </div>
+        <div class="enlaces-legales">
+            <h3>Enlaces a páginas legales</h3>
+            <ul>
+                <li><a href="#" target="_blank">Política de privacidad</a></li>
+                <li><a href="#" target="_blank">Términos de servicio</a></li>
+            </ul>
+        </div>
+        <div class="redes-sociales">
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCtakZatUqY-XaihWfMnz07w" target="_blank"><img src="/img/redes-sociales/youtube.webp" alt="Enlace a Youtube" width="35" height="35"></a></li>
+                <li><a href="https://www.instagram.com/aitanax/" target="_blank"><img src="/img/redes-sociales/instagram.webp" alt="Enlace a Instagram" width="35" height="35"></a></li>
+                <li><a href="https://www.tiktok.com/@holaitana?lang=en" target="_blank"><img src="/img/redes-sociales/tik-tok.webp" alt="Enlace a TikTok" width="35" height="35"></a></li>
+                <li><a href="https://twitter.com/Aitanax" target="_blank"><img src="/img/redes-sociales/x.webp" alt="Enlace a Twitter" width="35" height="35"></a></li>
+                <li><a href="https://www.facebook.com/aitanax" target="_blank"><img src="/img/redes-sociales/facebook.webp" alt="Enlace a Facebook" width="35" height="35"></a></li>
+            </ul>
+        </div>
     </footer>
-
 </body>
 </html>
+
+<script>
+
+    const yearElement = document.getElementById("year");
+    const currentYear = new Date().getFullYear();
+    
+
+    yearElement.textContent = currentYear;
+</script>
